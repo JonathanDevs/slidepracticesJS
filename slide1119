@@ -1,0 +1,268 @@
+<style>
+        .slider{
+          margin: 10px;
+          text-align: center;
+          padding: 20px;
+        }
+        .mySlides {display:none;}
+        .mySlide {
+            display: block;
+            background-color: #d5d5ef;
+            padding: 30px;
+        }
+        .tarjeta-body p {
+            font-size: 36px;
+            color: black;
+            padding: 30px 5px;
+              margin-bottom: 25px;
+            margin-top: 25px;
+          }
+        .tarjeta{
+            width: 20%;
+            display: inline-block;
+            border: 3px solid #76ca08;
+            border-radius: 26px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            position: relative;
+        }
+        .flecha{
+              width: 100%;
+            height: 10vw;
+            border: none;
+            color: #c7c7c7;
+            background-color: transparent;
+            font-size: 100px;
+        }
+        .precio-arriba{
+          background-color: #76ca08;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          text-align: center;
+          position: absolute;
+          top: -15%;
+            right: 30%;
+            left: 35%;
+        }
+        .boton-precio{
+            background: #76ca08;
+            padding: 5px 20px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .precio-arriba h4 {
+            color: white;
+            font-size: 1.5vw;
+            padding-top: 30%;
+        }
+           @media only screen  and (min-width : 1224px) {
+        .precio-arriba {    
+            top: -15%;
+            right: 30%;
+            left: 37%;
+        }
+        }
+          
+          @media only screen and (min-width: 1824px){
+        .precio-arriba {
+            top: -22%;
+            right: 30%;
+            left: 37%;
+            background-color: #76ca08;
+            width: 95px;
+            height: 75px;
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
+          } 
+            @media only screen and (min-width: 1824px)
+        {
+        .et_pb_text_9  {
+            width: 120px;
+             height: 120px;
+        }
+        }
+        }
+          
+        </style>
+        <body>                                 
+               <script>
+                function myFunction( ) {
+                  document.getElementById("satelca-hogar").innerHTML = "satelca-hogar";
+                }
+                </script>
+        
+        <div> <p onclick="myFunction()"><u class="underline">Satelca Hogar</u></p> 
+        <div id="satelca-hogar" class="slider">
+          <div style="width:5%; display: inline-block;">
+            <button class="flecha" onclick="plusDivs(-1)">❮</button>
+          </div>
+          <div style="width:80%; display: inline-block;">
+            <div class="mySlides">
+              <div class="tarjeta">
+                <div class="precio-arriba"><h4>$8</h4></div>
+                <div class="tarjeta-body ">
+                  <p class="card-text">1 Mbps</p>
+                  <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="precio-arriba"><h4>$16</h4></div>
+                <div class="tarjeta-body ">
+                  <p class="card-text">2 Mbps</p>
+                  <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                </div>
+              </div>
+              <div class="tarjeta">
+                 <div class="precio-arriba"><h4>$32</h4></div>
+                <div class="tarjeta-body ">
+                  <p class="card-text">4 Mbps</p>
+                  <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <div class="tarjeta">
+                 <div class="precio-arriba"><h4>$16</h4></div>
+                <div class="tarjeta-body ">
+                  <p class="card-text">2 Mbps</p>
+                  <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                </div>
+              </div>
+              <div class="tarjeta">
+                 <div class="precio-arriba"><h4>$32</h4></div>
+                <div class="tarjeta-body ">
+                  <p class="card-text">4 Mbps</p>
+                  <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                </div>
+              </div>
+              <div class="tarjeta">
+                 <div class="precio-arriba"><h4>$48</h4></div>
+                <div class="tarjeta-body ">
+                  <p class="card-text">6 Mbps</p>
+                  <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width:5%; display: inline-block;" >
+            <button class="flecha" onclick="plusDivs(1)">❯</button>
+          </div>
+        </div>
+
+
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+        
+
+      <hr>
+
+
+
+
+      <script>
+            function myFunction2( ) {
+              document.getElementById("residencial").innerHTML = "residencial";
+            }
+            </script>
+    
+    <div> <p onclick="myFunction2()"><u class="underline">Internet residencial</u></p> 
+
+      <div id="residencial" class="slider">
+            <div style="width:5%; display: inline-block;">
+              <button class="flecha" onclick="plusDivs(-1)">❮</button>
+            </div>
+            <div style="width:80%; display: inline-block;">
+              <div class="mySlides">
+                <div class="tarjeta">
+                  <div class="precio-arriba"><h4>$14</h4></div>
+                  <div class="tarjeta-body ">
+                    <p class="card-text">1 Mbps</p>
+                    <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="precio-arriba"><h4>$27</h4></div>
+                  <div class="tarjeta-body ">
+                    <p class="card-text">2 Mbps</p>
+                    <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                   <div class="precio-arriba"><h4>$48</h4></div>
+                  <div class="tarjeta-body ">
+                    <p class="card-text">4 Mbps</p>
+                    <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides">
+                <div class="tarjeta">
+                   <div class="precio-arriba"><h4>$48</h4></div>
+                  <div class="tarjeta-body ">
+                    <p class="card-text">4 Mbps</p>
+                    <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                   <div class="precio-arriba"><h4>$69</h4></div>
+                  <div class="tarjeta-body ">
+                    <p class="card-text">6 Mbps</p>
+                    <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                   <div class="precio-arriba"><h4>$126</h4></div>
+                  <div class="tarjeta-body ">
+                    <p class="card-text">12 Mbps</p>
+                    <a href="https://satelca.com/contacto/" class="boton-precio">Solicitar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="width:5%; display: inline-block;" >
+              <button class="flecha" onclick="plusDivs(1)">❯</button>
+            </div>
+          </div>
+     
+
+          <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
